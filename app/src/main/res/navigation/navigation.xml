@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/cadastroFragment">
+
+    <fragment
+        android:id="@+id/cadastroFragment"
+        android:name="br.com.zup.recursoshumanos.cadastro.CadastroFragment"
+        android:label="fragment_cadastro"
+        tools:layout="@layout/fragment_cadastro" >
+        <action
+            android:id="@+id/action_cadastroFragment_to_detalheFuncionarioFragment"
+            app:destination="@id/detalheFuncionarioFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/detalheFuncionarioFragment"
+        android:name="br.com.zup.recursoshumanos.detalhefuncionario.DetalheFuncionarioFragment"
+        android:label="fragment_detalhe_funcionario"
+        tools:layout="@layout/fragment_detalhe_funcionario" />
+</navigation>
